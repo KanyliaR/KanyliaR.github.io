@@ -1,0 +1,65 @@
+/* remove default browser spacing */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+
+/* image at the top */
+.hero-img {
+  display: block;
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  margin: 0 auto;      /* centers image */
+}
+
+/* text styling */
+.lp-text {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.lp-text {
+  max-width: 700px;
+  margin: 40px auto;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: #ff9f1c;
+  padding: 2px 4px;
+}
+
+.emphasis {
+  color: #c1121f;
+  font-weight: bold;
+}
+
+/* Back link stylying */
+.back-link {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.back-link a {
+  display: inline-block;
+}
+
+.back-link a:link,
+.back-link a:visited {
+  color: #2f3e2f;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

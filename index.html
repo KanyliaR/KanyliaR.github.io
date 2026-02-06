@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1: index.html</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background-color: #eef4ea; /* soft sage */
+        font-family: Arial, sans-serif;
+        position: relative;
+      }
+
+      /* Floral edge image */
+      .floral {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        width: 700px;     
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+        .corner-text {
+          position: relative;
+          margin: 40px 120px 0 auto;
+          width: fit-content;
+
+          font-family: "Dancing Script", cursive;
+          font-size: 60px;
+          font-weight: 600;
+          color: #2f3e2f;
+          z-index: 2;
+        }
+
+
+      /* Center white box */
+      .content {
+        position: relative;
+        z-index: 2;
+
+        max-width: 650px;
+        width: 90%;
+        margin: 80px auto 80px auto;
+        padding-bottom: 50px;
+
+        background: white;
+        padding: 40px 30px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        text-align: center;
+        color: #2f3e2f;
+      }
+
+        .content h1 {
+          font-family: "Dancing Script", cursive;
+          font-size: 50px;
+          font-weight: 700;
+        }
+        
+        .content p:not(.curious):not(.nav-link) {
+          font-family: Garamond, "Times New Roman", serif;
+          font-size: 16px;
+          line-height: 1.6;
+          color: #3c4b3c;
+          max-width: 520px;
+          margin: 35px auto 0 auto;
+        }
+        
+        .image-row {
+        display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin-top: 20px;
+        }
+
+        .image-row img {
+          width: 170px;
+          height: 190px;
+          object-fit: cover;
+        }
+        
+        .course-list{
+            font-family: Garamond, "Times New Roman", serif;
+          font-size: 16px;
+          line-height: 1.8;
+          color: #3c4b3c;
+
+        
+            display: inline-block;
+            text-align: center;
+            list-style-position: inside;
+            padding-left: 0;
+            margin: 10px auto 0 auto;
+        }
+        
+        .curious {
+          font-family: "Dancing Script", cursive;
+          font-size: 65px;
+          font-weight: 700;
+          margin: 25px 0 10px 0;
+        }
+        
+        .nav-link a {
+          font-family: Garamond, "Times New Roman", serif;
+          font-size: 18px;
+          color: #2f3e2f;
+          text-decoration: none;
+          display: block;
+          margin-top: 10px;
+        
+        }
+
+        .nav-link a:hover {
+          text-decoration: underline;
+        }
+    </style>
+  </head>
+
+  <body>
+    <img src="img/flowers.png" class="floral" alt="Floral Corner">
+    <p class="corner-text">Hi there,<br>it's nice to meet you!</p>
+
+    <div class="content">
+      <h1>My name is Kanylia Reid! </h1>
+      <div class="image-row">
+        <img src="img/UPEGroup.jpg" alt="UPE Group Picture">
+        <img src="img/middle.jpg" alt="Selfie">
+        <img src="img/UPESolo.jpg" alt="UPE Solo Picture">
+      </div>
+      
+      <p>Hello! I’m a third year Computer Science student at North Carolina A&T State University. I'm also a proud member of Upsilon Pi Epsilon (UPE), the international computing honor society. I love creating projects that mix creativity and technology, and I’m always interested in learning new skills that can help me grow as a developer. I’m currently building my portfolio and working toward an internship in tech.</p>
+      <p> To keep building my skills, I'm currently taking courses such as:</p>
+      <ul class="course-list">
+          <li>COMP 495 - Senior Project I</li>
+          <li>COMP 365 - AI & Machine Learning</li>
+          <li>COMP 322 - Internet Systems</li>
+          <li>COMP 200 - Computer Science Jr. Colloquium</li>
+          <li>COMP 300 - Computer Science Sophomore Colloquium</li>
+          <li>COMP 454 - Virtual & Augmented Reality</li>
+        </ul>
+      
+      <p class="curious">Curious?</p>
+      <p class="nav-link">
+        <a href="introduction.html">Here’s a closer look at my background &amp; skills! →</a>
+        <br><a href="little_prince.html">Link to the Little Prince →</a>
+      </p>
+    </div>
+  </body>
+</html>
